@@ -93,8 +93,10 @@ public class GroundCheck : MonoBehaviour
                     {
                         Instantiate(landingEffect, transform.position, Quaternion.identity, null);
                     }
+                    Debug.Log("CheckGrounded = true");
                     groundedLastCheck = true;
                     return true;
+                    
                 }
             }
         }
